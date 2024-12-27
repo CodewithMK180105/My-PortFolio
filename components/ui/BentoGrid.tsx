@@ -7,6 +7,7 @@ import animationData from '@/data/confetti.json'
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { BsFillClipboardCheckFill } from "react-icons/bs";
 
 export const BentoGrid = ({
   className,
@@ -153,7 +154,7 @@ export const BentoGridItem = ({
                 </div>
                 <MagicButton
                   title={copied? 'Email copied': 'copy my Email'}
-                  icon={<IoCopyOutline />}
+                  icon={copied? <BsFillClipboardCheckFill className="text-green-500 w-6 h-6" />:<IoCopyOutline />}
                   position="left"
                   otherClasses="!bg-[#161a31]"
                   handleClick={handleCopy}
