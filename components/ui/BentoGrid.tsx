@@ -1,7 +1,12 @@
+'use client'
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { div, span } from "framer-motion/client";
+import { useState } from "react";
+import animationData from '@/data/confetti.json'
+import Lottie from "react-lottie";
+import MagicButton from "./MagicButton";
+import { IoCopyOutline } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -41,6 +46,14 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+
+  const [copied,setCopied]=useState(false);
+  
+  const handleCopy=()=>{
+    navigator.clipboard.writeText('manishkumar180105@gmail.com');
+    setCopied(true);
+  }
+
   return (
     <div
       className={cn(
@@ -53,7 +66,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(133,105,233,1) 41%, rgba(0,212,255,1) 100%)",
       }}
     >
-      <div className={`${id === 6} && 'flex justify-center h-full'`}>
+      <div className={`${id === 6 && 'flex justify-center'} h-full'`}>
         <div className="w-full h-full absolute">
           {img && (
             <Image
@@ -99,33 +112,57 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id===3 && (
+          {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-3 lg:gap-8">
-              {
-                ["MERN","LEETCODE","AWS"].map((item)=>(
-                  <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                {["MERN", "LEETCODE", "AWS"].map((item) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
                     {item}
                   </span>
-                ))
-              }
-              <span className="py-4 px-3  rounded-lg text-center bg-[#10132e]" />
+                ))}
+                <span className="py-4 px-3  rounded-lg text-center bg-[#10132e]" />
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
-              <span className="py-4 px-3  rounded-lg text-center bg-[#10132e]" />
-              {
-                ["MERN","LEETCODE","AWS"].map((item)=>(
-                  <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
+                <span className="py-4 px-3  rounded-lg text-center bg-[#10132e]" />
+                {["MERN", "LEETCODE", "AWS"].map((item) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
                     {item}
                   </span>
-                ))
-              }
+                ))}
               </div>
             </div>
           )}
-
+          {
+            id===6 && (
+              <div className="mt-5 relative">
+                <div className={`absolute -bottom-5 right-0`}>
+                  <Lottie options={{
+                    loop: copied,
+                    autoplay: copied,
+                    animationData,
+                    rendererSettings: {
+                      preserveAspectRatio: 'xMidyMid slice',
+                    }
+                  }}/>
+                </div>
+                <MagicButton
+                  title={copied? 'Email copied': 'copy my Email'}
+                  icon={<IoCopyOutline />}
+                  position="left"
+                  otherClasses="!bg-[#161a31]"
+                  handleClick={handleCopy}
+                />
+              </div>
+            )
+          }
+        </div>
       </div>
     </div>
-          </div>
   );
 };
