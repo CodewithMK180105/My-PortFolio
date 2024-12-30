@@ -147,13 +147,16 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      name: "git"
     },
     {
       id: 2,
       img: "/twit.svg",
+      name: "twit"
     },
     {
       id: 3,
       img: "/link.svg",
+      name: "git"
     },
   ];
