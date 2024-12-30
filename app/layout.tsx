@@ -7,7 +7,7 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Manishkumar's Portfolio - Full-Stack Developer",
+  title: "Manishkumar's Portfolio - Frontend Developer",
   description: "Showcasing a versatile portfolio of modern web development projects, innovative solutions, and expertise in frontend technologies.",
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/jsm-logo.png" sizes="any" />
+        <link rel="icon" href="/vercel.svg" sizes="any" />
       </head>
       <body className={inter.className}>
         <ThemeProvider

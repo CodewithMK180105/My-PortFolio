@@ -3,6 +3,7 @@ import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link";
 
 const RecentProjects = () => {
   return (
@@ -51,7 +52,9 @@ const RecentProjects = () => {
                     <div
                       key={icon}
                       className={`border border-white/[0.2] rounded-full lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center ${
-                        icon === '/Js.svg' || icon === '/shadcn.svg' ? 'bg-white' : 'bg-black'
+                        icon === "/Js.svg" || icon === "/shadcn.svg"
+                          ? "bg-white"
+                          : "bg-black"
                       }`}
                       style={{
                         transform: `translateX(-${5 * index * 2}px)`,
@@ -68,12 +71,14 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+                <Link href={project.link} target="_blank">
+                  <div className="flex justify-center items-center">
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      Check Live Site
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  </div>
+                </Link>
               </div>
             </PinContainer>
           </div>
