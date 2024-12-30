@@ -2,6 +2,22 @@
 import { cn } from "@/lib/utils";
 import { useRef } from "react";
 
+// Define containerStyle as a CSSProperties type
+const containerStyle: React.CSSProperties = {
+  "--m-x": "50%",
+  "--m-y": "50%",
+  "--r-x": "0deg",
+  "--r-y": "0deg",
+  "--bg-x": "50%",
+  "--bg-y": "50%",
+  "--duration": "300ms",
+  "--foil-size": "100%",
+  "--opacity": "0",
+  "--radius": "48px",
+  "--easing": "ease",
+  "--transition": "var(--duration) var(--easing)",
+};
+
 export const GlareCard = ({
   children,
   className,
@@ -25,20 +41,6 @@ export const GlareCard = ({
       y: 0,
     },
   });
-  const containerStyle = {
-    "--m-x": "50%",
-    "--m-y": "50%",
-    "--r-x": "0deg",
-    "--r-y": "0deg",
-    "--bg-x": "50%",
-    "--bg-y": "50%",
-    "--duration": "300ms",
-    "--foil-size": "100%",
-    "--opacity": "0",
-    "--radius": "48px",
-    "--easing": "ease",
-    "--transition": "var(--duration) var(--easing)",
-  } as any;
 
   const backgroundStyle = {
     "--step": "5%",
@@ -65,9 +67,10 @@ export const GlareCard = ({
       refElement.current?.style.setProperty("--bg-y", `${background.y}%`);
     }
   };
+
   return (
     <div
-      style={containerStyle}
+      style={containerStyle} // Using CSSProperties type
       className="relative isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[320px] [aspect-ratio:17/21]"
       ref={refElement}
       onPointerMove={(event) => {
