@@ -113,6 +113,20 @@ export const navItems = [
     },
     {
       id: 4,
+      title: "Harmony Hub – Music School Platform",
+      des: "Harmony Hub is a music education platform designed for aspiring musicians and enthusiasts. It offers a wide range of courses, including beginner, intermediate, and advanced programs in instruments like guitar, piano, violin, and vocal training. The site also features instructor profiles, student success stories, live demo sessions, and an easy-to-navigate registration system.",
+      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1737740553/music-school_ebqnjg.png",
+      iconLists: [
+        "/next.svg",
+        "/React.svg",
+        "/tail.svg",
+        "/ts.svg", 
+        "https://tse3.mm.bing.net/th?id=OIP.k7bUWvQbXDQSgUXyJQbWeAAAAA&pid=Api&P=0&h=180",
+      ], 
+        link: "https://music-school-seven.vercel.app/", 
+    },  
+    {
+      id: 5,
       title: "Educity – Educational Advertisement Platform",
       des: "Educity is an educational platform designed to connect learners with top-tier institutions and courses. The site features various programs, including undergraduate, master's, and postgraduate degrees, along with testimonials from students, campus photos, and a user-friendly contact form.",
       img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383778/Educity_n3mj3m.png",
