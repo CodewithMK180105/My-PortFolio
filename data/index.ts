@@ -101,6 +101,21 @@ export const navItems = [
     },
     {
       id: 3,
+      title: "CarHub – Car Rental Platform",
+      des: "A car rental website with advanced filtering options for manufacturer type, model type, fuel type, and years. It fetches car data using RapidAPI, providing a seamless user experience for renting cars.",
+      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1740160725/car-showroom_zxiiwx.png",
+      iconLists: [
+        "/next.svg",
+        "/React.svg",
+        "/ts.svg", 
+        "/tail.svg", 
+        "/shadcn.svg",
+        "/api.svg"
+      ],
+      link: "https://car-showroom-pi.vercel.app/",
+    },
+    {
+      id: 4,
       title: "Clothing Hub – E-commerce Store for Clothing",
       des: "Clothing Hub is an online store offering a wide variety of clothing for men, women, and kids. With separate sections for each category, users can easily navigate through different pages and shop for trendy clothes. A seamless shopping experience with multiple product options and categories.",
       img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383760/E-commerce_hlkjhb.png",
@@ -112,7 +127,7 @@ export const navItems = [
       link: "https://dancing-cat-bdf7f3.netlify.app",
     },
     {
-      id: 4,
+      id: 5,
       title: "Harmony Hub – Music School Platform",
       des: "Harmony Hub is a music education platform designed for aspiring musicians and enthusiasts. It offers a wide range of courses, including beginner, intermediate, and advanced programs in instruments like guitar, piano, violin, and vocal training. The site also features instructor profiles, student success stories, live demo sessions, and an easy-to-navigate registration system.",
       img: "https://res.cloudinary.com/dffoynel3/image/upload/v1737740553/music-school_ebqnjg.png",
@@ -126,7 +141,7 @@ export const navItems = [
         link: "https://music-school-seven.vercel.app/", 
     },
     {
-      id: 5,
+      id: 6,
       title: "SummarizeAI – AI Article Summarizer",
       des: "SummarizeAI is a powerful AI-driven tool that allows users to generate concise and accurate summaries of articles and web content. Simply input a URL, and the platform extracts key insights using advanced AI summarization technology. It provides an intuitive interface, quick processing, and precise results, making it an essential tool for researchers, students, and professionals.",
       img: "https://res.cloudinary.com/dffoynel3/image/upload/v1738689665/SummarizeAI_hzrroz.png",
@@ -140,7 +155,7 @@ export const navItems = [
         link: "https://ai-article-summarizer-lovat.vercel.app/", 
     },
     {
-      id: 6,
+      id: 7,
       title: "Educity – Educational Advertisement Platform",
       des: "Educity is an educational platform designed to connect learners with top-tier institutions and courses. The site features various programs, including undergraduate, master's, and postgraduate degrees, along with testimonials from students, campus photos, and a user-friendly contact form.",
       img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383778/Educity_n3mj3m.png",
