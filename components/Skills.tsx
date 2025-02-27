@@ -43,7 +43,7 @@ const skillTypeArray: skillType[] = [
 
 const Skills = () => {
   return (
-    <div className='h-[10rem] w-full dark:bg-black relative flex flex-col items-center justify-center overflow-hidden'>
+    <div className='h-[10rem] w-full dark:bg-[#13162d] relative flex flex-col items-center justify-center overflow-hidden'>
       <h1 className="heading mb-4">
         My
         <span className="text-purple"> Tech Skills</span>
