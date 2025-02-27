@@ -41,9 +41,40 @@ const skillTypeArray: skillType[] = [
     },
   ];
 
+  const languagesAndTools: skillType[] =[
+    {
+      path:'/c.svg',
+      skill: "C"
+    },
+    {
+      path:'/c++.svg',
+      skill: "C++"
+    },
+    {
+      path:'/java.svg',
+      skill: "JAVA"
+    },
+    {
+      path:'/python.svg',
+      skill: "PYTHON"
+    },
+    {
+      path:'/git.svg',
+      skill: "Git"
+    },
+    {
+      path:'/github.svg',
+      skill: "GitHub"
+    },
+    {
+      path:'/postman.svg',
+      skill: "Postman"
+    },
+  ]
+
 const Skills = () => {
   return (
-    <div className='h-[10rem] w-full relative flex flex-col items-center justify-center overflow-hidden'>
+    <div className='h-[20rem] w-full relative flex flex-col items-center justify-center overflow-hidden'>
       <h1 className="heading mb-4">
         My
         <span className="text-purple"> Tech Skills</span>
@@ -53,6 +84,15 @@ const Skills = () => {
         <InfiniteMovingCards
             items={skillTypeArray}
             direction="right"
+            speed="fast"
+        />
+        </div>
+      </div>
+      <div className='flex justify-center w-full overflow-hidden px-4 sm:px-6 lg:px-8'>
+        <div className='w-full'>
+        <InfiniteMovingCards
+            items={languagesAndTools}
+            direction="left"
             speed="fast"
         />
         </div>
