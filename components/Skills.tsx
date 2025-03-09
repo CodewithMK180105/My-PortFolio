@@ -25,11 +25,11 @@ const Framework_Library: skillType[] = [
     },
     {
       path: '/expressjs.svg',
-      skill: 'Bootstrap',
+      skill: 'Express Js',
     },
     {
       path: '/nodejs.svg',
-      skill: 'Bootstrap',
+      skill: 'Node Js',
     },
   ];
 
