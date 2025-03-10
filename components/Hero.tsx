@@ -35,7 +35,7 @@ const Hero = () => {
             words="Transforming Concepts into Seamless User Experience"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Manishkumar. A Frontend Developer.
+            Hi, I&apos;m Manishkumar. A Full Stack Developer.
           </p>
           <Link href="#projects">
             <MagicButton 
