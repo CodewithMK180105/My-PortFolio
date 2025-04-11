@@ -217,6 +217,20 @@ export const navItems = [
       className: "md:col-span-2",
       thumbnail: "/exp2.svg",
     },
+    {
+      id: 3,
+      title: "Frontend Developer Intern - TestKart",
+      desc: "Developed responsive and reusable UI components for TestKart’s edtech platform using Next.js, TypeScript, and Tailwind CSS. Focused on enhancing user experience through clean design and frontend best practices.",
+      className: "md:col-span-2",
+      thumbnail: "/exp3.svg",
+    },
+    {
+      id: 4,
+      title: "Frontend Developer Intern - Clearcase Tech Solutions",
+      desc: "Building the company website from scratch using Next.js, TypeScript, and Tailwind CSS. Responsible for designing and implementing responsive layouts, reusable components, and ensuring a seamless user experience.",
+      className: "md:col-span-2",
+      thumbnail: "/exp4.svg",
+    },    
   ];
   
   
