@@ -71,7 +71,41 @@ export const navItems = [
   
   export const projects = [
     {
-      id: 1,
+      id: 9,
+      title: "QuickCart – Full Stack Electronics E-commerce Platform",
+      des: "A full-stack e-commerce platform allowing users to browse and order electronic products while enabling sellers to manage products and orders. Features include secure auth with Clerk, image uploads via Cloudinary, event handling with Inngest, and payments via Stripe.",
+      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1744360156/Screenshot_2025-04-11_133505_atdvqs.png", // 🔁 Replace with actual screenshot
+      iconLists: [
+        "/next.svg",
+        "/React.svg",
+        "/ts.svg",
+        "/tail.svg",
+        "/shadcn.svg",
+        "/mongo.svg",
+        "/clerk_logo.png",
+        "/cloudinary.svg",
+        "/inngest.png",
+        "/stripe.png"
+      ],
+      link: "https://quick-cart-electric-devices.vercel.app/" // 🔁 Replace with your actual live link
+    },
+    {
+      id: 8,
+      title: "YouTube Comment Analyzer",
+      des: "A full-stack web application that fetches YouTube comments, categorizes them using an ML/NLP model, and visualizes them through graphs. Features include category filters, interactive UI, animations, and secure login. Designed for social impact and content insights.",
+      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1744357096/Screenshot_2025-04-11_120112_ft6bu4.png", // 🔁 Replace with your actual image URL
+      iconLists: [
+        "/next.svg",
+        "/React.svg",
+        "/ts.svg",
+        "/tail.svg",
+        "/shadcn.svg",
+        "/clerk_logo.png"
+      ],
+      link: "https://github.com/CodewithMK180105/Youtube_Comment_Analyser"
+    },
+    {
+      id: 7,
       title: "DSA Blogs – Coding Blog Platform",
       des: "An interactive platform showcasing coding problem-solving approaches using LeetCode problems, with features like theme options, animations, typing effects, and a copy button for code. Built using modern web technologies to demonstrate advanced frontend skills.",
       img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383722/DSA_blog_pgelx5.png",
@@ -86,7 +120,7 @@ export const navItems = [
     }
     ,
     {
-      id: 2,
+      id: 6,
       title: "FreshMart – Online Grocery Store",
       des: "FreshMart is a convenient online grocery store that offers categories such as vegetables, fruits, dairy products, meat, bakery items, and grains. Features include adding products to the cart, viewing the cart, and a billing section with GST and delivery charges, making online shopping simple and efficient.",
       img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383785/FreshMart_mcovww.png",
@@ -99,21 +133,21 @@ export const navItems = [
       ],
       link: "https://online-grocery-store-using-next-js.vercel.app/",
     },
-    {
-      id: 3,
-      title: "CarHub – Car Rental Platform",
-      des: "A car rental website with advanced filtering options for manufacturer type, model type, fuel type, and years. It fetches car data using RapidAPI, providing a seamless user experience for renting cars.",
-      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1740160725/car-showroom_zxiiwx.png",
-      iconLists: [
-        "/next.svg",
-        "/React.svg",
-        "/ts.svg", 
-        "/tail.svg", 
-        "/shadcn.svg",
-        "/api.svg"
-      ],
-      link: "https://car-showroom-pi.vercel.app/",
-    },
+    // {
+    //   id: 5,
+    //   title: "CarHub – Car Rental Platform",
+    //   des: "A car rental website with advanced filtering options for manufacturer type, model type, fuel type, and years. It fetches car data using RapidAPI, providing a seamless user experience for renting cars.",
+    //   img: "https://res.cloudinary.com/dffoynel3/image/upload/v1740160725/car-showroom_zxiiwx.png",
+    //   iconLists: [
+    //     "/next.svg",
+    //     "/React.svg",
+    //     "/ts.svg", 
+    //     "/tail.svg", 
+    //     "/shadcn.svg",
+    //     "/api.svg"
+    //   ],
+    //   link: "https://car-showroom-pi.vercel.app/",
+    // },
     {
       id: 4,
       title: "Clothing Hub – E-commerce Store for Clothing",
@@ -127,7 +161,7 @@ export const navItems = [
       link: "https://dancing-cat-bdf7f3.netlify.app",
     },
     {
-      id: 5,
+      id: 3,
       title: "Harmony Hub – Music School Platform",
       des: "Harmony Hub is a music education platform designed for aspiring musicians and enthusiasts. It offers a wide range of courses, including beginner, intermediate, and advanced programs in instruments like guitar, piano, violin, and vocal training. The site also features instructor profiles, student success stories, live demo sessions, and an easy-to-navigate registration system.",
       img: "https://res.cloudinary.com/dffoynel3/image/upload/v1737740553/music-school_ebqnjg.png",
@@ -140,33 +174,32 @@ export const navItems = [
       ], 
         link: "https://music-school-seven.vercel.app/", 
     },
-    {
-      id: 6,
-      title: "SummarizeAI – AI Article Summarizer",
-      des: "SummarizeAI is a powerful AI-driven tool that allows users to generate concise and accurate summaries of articles and web content. Simply input a URL, and the platform extracts key insights using advanced AI summarization technology. It provides an intuitive interface, quick processing, and precise results, making it an essential tool for researchers, students, and professionals.",
-      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1738689665/SummarizeAI_hzrroz.png",
-      iconLists: [
-        "/next.svg",
-        "/ts.svg", 
-        "/React.svg",
-        "/redux.svg",
-        "/tail.svg",
-      ], 
-        link: "https://ai-article-summarizer-lovat.vercel.app/", 
-    },
-    {
-      id: 7,
-      title: "Educity – Educational Advertisement Platform",
-      des: "Educity is an educational platform designed to connect learners with top-tier institutions and courses. The site features various programs, including undergraduate, master's, and postgraduate degrees, along with testimonials from students, campus photos, and a user-friendly contact form.",
-      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383778/Educity_n3mj3m.png",
-      iconLists: [
-        "/React.svg",
-        "/Js.svg",
-        "/css.svg",
-      ],
-      link: "https://mellifluous-bubblegum-e6aec4.netlify.app",
-    }
-    ,
+    // {
+    //   id: 2,
+    //   title: "SummarizeAI – AI Article Summarizer",
+    //   des: "SummarizeAI is a powerful AI-driven tool that allows users to generate concise and accurate summaries of articles and web content. Simply input a URL, and the platform extracts key insights using advanced AI summarization technology. It provides an intuitive interface, quick processing, and precise results, making it an essential tool for researchers, students, and professionals.",
+    //   img: "https://res.cloudinary.com/dffoynel3/image/upload/v1738689665/SummarizeAI_hzrroz.png",
+    //   iconLists: [
+    //     "/next.svg",
+    //     "/ts.svg", 
+    //     "/React.svg",
+    //     "/redux.svg",
+    //     "/tail.svg",
+    //   ], 
+    //     link: "https://ai-article-summarizer-lovat.vercel.app/", 
+    // },
+    // {
+    //   id: 1,
+    //   title: "Educity – Educational Advertisement Platform",
+    //   des: "Educity is an educational platform designed to connect learners with top-tier institutions and courses. The site features various programs, including undergraduate, master's, and postgraduate degrees, along with testimonials from students, campus photos, and a user-friendly contact form.",
+    //   img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383778/Educity_n3mj3m.png",
+    //   iconLists: [
+    //     "/React.svg",
+    //     "/Js.svg",
+    //     "/css.svg",
+    //   ],
+    //   link: "https://mellifluous-bubblegum-e6aec4.netlify.app",
+    // }
   ];
   
   export const workExperience = [
