@@ -71,6 +71,21 @@ export const navItems = [
   
   export const projects = [
     {
+      id: 10,
+      title: "Mystery Message – Decode the Unspeakable",
+      des: "A mysterious platform where users can send and receive secret messages without revealing their identity. Designed for fun, curiosity, and a hint of suspense, the sender stays anonymous while the receiver deciphers the message. Powered by Next Auth for secure access and MongoDB for message handling.",
+      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1747246074/Screenshot_2025-05-14_233511_ts3wr2.png", // 🔁 Replace with actual screenshot
+      iconLists: [
+        "/next.svg",
+        "/React.svg",
+        "/ts.svg",
+        "/tail.svg",
+        "/shadcn.svg",
+        "/mongo.svg",
+      ],
+      link: "https://mystery-messages-one.vercel.app/" // 🔁 Replace with your actual live link
+    },
+    {
       id: 9,
       title: "QuickCart – Full Stack Electronics E-commerce Platform",
       des: "A full-stack e-commerce platform allowing users to browse and order electronic products while enabling sellers to manage products and orders. Features include secure auth with Clerk, image uploads via Cloudinary, event handling with Inngest, and payments via Stripe.",
@@ -160,20 +175,20 @@ export const navItems = [
       ],
       link: "https://dancing-cat-bdf7f3.netlify.app",
     },
-    {
-      id: 3,
-      title: "Harmony Hub – Music School Platform",
-      des: "Harmony Hub is a music education platform designed for aspiring musicians and enthusiasts. It offers a wide range of courses, including beginner, intermediate, and advanced programs in instruments like guitar, piano, violin, and vocal training. The site also features instructor profiles, student success stories, live demo sessions, and an easy-to-navigate registration system.",
-      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1737740553/music-school_ebqnjg.png",
-      iconLists: [
-        "/next.svg",
-        "/React.svg",
-        "/tail.svg",
-        "/ts.svg", 
-        "https://tse3.mm.bing.net/th?id=OIP.k7bUWvQbXDQSgUXyJQbWeAAAAA&pid=Api&P=0&h=180",
-      ], 
-        link: "https://music-school-seven.vercel.app/", 
-    },
+    // {
+    //   id: 3,
+    //   title: "Harmony Hub – Music School Platform",
+    //   des: "Harmony Hub is a music education platform designed for aspiring musicians and enthusiasts. It offers a wide range of courses, including beginner, intermediate, and advanced programs in instruments like guitar, piano, violin, and vocal training. The site also features instructor profiles, student success stories, live demo sessions, and an easy-to-navigate registration system.",
+    //   img: "https://res.cloudinary.com/dffoynel3/image/upload/v1737740553/music-school_ebqnjg.png",
+    //   iconLists: [
+    //     "/next.svg",
+    //     "/React.svg",
+    //     "/tail.svg",
+    //     "/ts.svg", 
+    //     "https://tse3.mm.bing.net/th?id=OIP.k7bUWvQbXDQSgUXyJQbWeAAAAA&pid=Api&P=0&h=180",
+    //   ], 
+    //     link: "https://music-school-seven.vercel.app/", 
+    // },
     // {
     //   id: 2,
     //   title: "SummarizeAI – AI Article Summarizer",
