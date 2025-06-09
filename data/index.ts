@@ -94,13 +94,9 @@ export const navItems = [
         "/next.svg",
         "/React.svg",
         "/ts.svg",
-        "/tail.svg",
-        "/shadcn.svg",
         "/mongo.svg",
         "/clerk_logo.png",
         "/cloudinary.svg",
-        "/inngest.png",
-        "/stripe.png"
       ],
       link: "https://quick-cart-electric-devices.vercel.app/" // 🔁 Replace with your actual live link
     },
@@ -269,3 +265,6 @@ export const navItems = [
       link: "https://www.linkedin.com/in/manishkumar-gupta-1139642b5"
     },
   ];
+
+
+// https://leetcode.com/medal/?showImg=1
