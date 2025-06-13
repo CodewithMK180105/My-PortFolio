@@ -71,6 +71,21 @@ export const navItems = [
   
   export const projects = [
     {
+      id: 11,
+      title: "Attendease – Attendance Request Portal",
+      des: "A smart and efficient portal that digitizes the manual attendance request process for students involved in extracurricular activities. Students can submit event details, upload proofs, and track approval status from HODs and faculty—all in one place. Built with secure authentication and a clean, intuitive UI.",
+      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1749829523/Screenshot_2025-06-13_211153_mhuccn.png", // 🔁 Replace with actual screenshot
+      iconLists: [
+        "/next.svg",
+        "/React.svg",
+        "/ts.svg",
+        "/tail.svg",
+        "/shadcn.svg",
+        "/mongo.svg"
+      ],
+      link: "https://attendease-eight.vercel.app/" // 🔁 Replace with your actual live link
+    },
+    {
       id: 10,
       title: "Mystery Message – Decode the Unspeakable",
       des: "A mysterious platform where users can send and receive secret messages without revealing their identity. Designed for fun, curiosity, and a hint of suspense, the sender stays anonymous while the receiver deciphers the message. Powered by Next Auth for secure access and MongoDB for message handling.",
@@ -128,22 +143,21 @@ export const navItems = [
         "/shadcn.svg", 
       ],
       link: "https://dsa-blogs.netlify.app/",
-    }
-    ,
-    {
-      id: 6,
-      title: "FreshMart – Online Grocery Store",
-      des: "FreshMart is a convenient online grocery store that offers categories such as vegetables, fruits, dairy products, meat, bakery items, and grains. Features include adding products to the cart, viewing the cart, and a billing section with GST and delivery charges, making online shopping simple and efficient.",
-      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383785/FreshMart_mcovww.png",
-      iconLists: [
-        "/next.svg",
-        "/React.svg",
-        "/tail.svg",
-        "/ts.svg",
-        "/shadcn.svg",
-      ],
-      link: "https://online-grocery-store-using-next-js.vercel.app/",
     },
+    // {
+    //   id: 6,
+    //   title: "FreshMart – Online Grocery Store",
+    //   des: "FreshMart is a convenient online grocery store that offers categories such as vegetables, fruits, dairy products, meat, bakery items, and grains. Features include adding products to the cart, viewing the cart, and a billing section with GST and delivery charges, making online shopping simple and efficient.",
+    //   img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383785/FreshMart_mcovww.png",
+    //   iconLists: [
+    //     "/next.svg",
+    //     "/React.svg",
+    //     "/tail.svg",
+    //     "/ts.svg",
+    //     "/shadcn.svg",
+    //   ],
+    //   link: "https://online-grocery-store-using-next-js.vercel.app/",
+    // },
     // {
     //   id: 5,
     //   title: "CarHub – Car Rental Platform",
@@ -159,18 +173,18 @@ export const navItems = [
     //   ],
     //   link: "https://car-showroom-pi.vercel.app/",
     // },
-    {
-      id: 4,
-      title: "Clothing Hub – E-commerce Store for Clothing",
-      des: "Clothing Hub is an online store offering a wide variety of clothing for men, women, and kids. With separate sections for each category, users can easily navigate through different pages and shop for trendy clothes. A seamless shopping experience with multiple product options and categories.",
-      img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383760/E-commerce_hlkjhb.png",
-      iconLists: [
-        "/React.svg",
-        "/Js.svg",
-        "/css.svg",
-      ],
-      link: "https://dancing-cat-bdf7f3.netlify.app",
-    },
+    // {
+    //   id: 4,
+    //   title: "Clothing Hub – E-commerce Store for Clothing",
+    //   des: "Clothing Hub is an online store offering a wide variety of clothing for men, women, and kids. With separate sections for each category, users can easily navigate through different pages and shop for trendy clothes. A seamless shopping experience with multiple product options and categories.",
+    //   img: "https://res.cloudinary.com/dffoynel3/image/upload/v1735383760/E-commerce_hlkjhb.png",
+    //   iconLists: [
+    //     "/React.svg",
+    //     "/Js.svg",
+    //     "/css.svg",
+    //   ],
+    //   link: "https://dancing-cat-bdf7f3.netlify.app",
+    // },
     // {
     //   id: 3,
     //   title: "Harmony Hub – Music School Platform",
